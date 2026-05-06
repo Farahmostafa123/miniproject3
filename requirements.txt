@@ -1,5 +1,6 @@
-pyspark
+pyspark==3.5.0
 kafka-python
 numpy
 pandas
 matplotlib
+jupyter
