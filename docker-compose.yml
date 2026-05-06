@@ -18,7 +18,11 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
-  spark:
-    image: bitnami/spark:latest
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
     volumes:
       - .:/app
+    depends_on:
+      - kafka
