@@ -1,0 +1,5 @@
+pyspark
+kafka-python
+numpy
+pandas
+matplotlib
